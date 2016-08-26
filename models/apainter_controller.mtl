@@ -1,0 +1,36 @@
+# Blender MTL File: 'apainter_controller.blend'
+# Material Count: 3
+
+newmtl mat_body
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.375743 0.375743 0.375743
+Ks 0.177083 0.177083 0.177083
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Y:\mozvr\git\a-painter\images\apainter_controller_diffuse.jpg
+map_Ks  Y:\\mozvr\\git\\a-painter\\images\\apainter_controller_diffuse.jpg
+
+newmtl mat_body_NONE
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.375743 0.375743 0.375743
+Ks 0.177083 0.177083 0.177083
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  Y:\\mozvr\\git\\a-painter\\images\\apainter_controller_diffuse.jpg
+map_Ks  Y:\\mozvr\\git\\a-painter\\images\\apainter_controller_diffuse.jpg
+
+newmtl mat_tip
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.000000 0.002575
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
