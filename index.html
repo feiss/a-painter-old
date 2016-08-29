@@ -18,11 +18,17 @@
         <img id="uinormal" src="images/ui_normal.png">
         <img id="apainterlogo" src="images/apainter_logo.png">
         <a-asset-item id="uiobj" src="models/ui.obj"></a-asset-item>
+        <a-asset-item id="logoobj" src="models/logo.obj"></a-asset-item>
       </a-assets>
       <a-light type="point" light="color: #fff; intensity:0.6" position="3 10 1"></a-light>
       <a-light type="hemisphere" groundColor="#888" intensity="0.8"></a-light>
 
-      <a-entity position="0 1.5 -1.54" scale="3 1.14 1" geometry="primitive:plane" id="logo" material="src:#apainterlogo;depthTest:true;flatShading:true;shader:flat;side:double;transparent:true"></a-entity>
+      <!-- flat logo
+      <a-entity position="0 1.5 -1.54" scale="3 1.14 1" geometry="primitive:plane" id="logo" material="src:#apainterlogo;depthTest:true;flatShading:true;shader:flat;side:double;transparent:true"></a-entity>-->
+      <a-entity id="logo" material="flatShading:true;shader:flat;transparent:true;color:#ffffff;fog:false;src:#apainterlogo" obj-model="obj: #logoobj"></a-entity>
+
+      
+
 
       <a-entity id="left-hand"
                 brush="color: #ff0; linewidth: 1"
