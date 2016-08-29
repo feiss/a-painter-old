@@ -16,14 +16,17 @@
         <img id="skymap" src="images/sky.jpg">
         <img id="color" src="images/colorwheel.png">
         <img id="uinormal" src="images/ui_normal.png">
+        <img id="apainterlogo" src="images/apainter_logo.png">
         <a-asset-item id="uiobj" src="models/ui.obj"></a-asset-item>
       </a-assets>
       <a-light type="point" light="color: #fff; intensity:0.6" position="3 10 1"></a-light>
       <a-light type="hemisphere" groundColor="#888" intensity="0.8"></a-light>
 
+      <a-entity position="0 1.5 -1.54" scale="3 1.14 1" geometry="primitive:plane" id="logo" material="src:#apainterlogo;depthTest:true;flatShading:true;shader:flat;side:double;transparent:true"></a-entity>
+
       <a-entity id="left-hand"
                 brush="color: #ff0; linewidth: 1"
-                vive-controls="hand: left;"
+                vive-controls="hand: left; model: false"
                 json-model="src: url(models/apainter_controller.json)">
                 <!--<a-entity geometry="primitive: sphere; radius: 0.035" position="0 -0.03 -0.02" material="color:#ff9; shader:flat"></a-entity>-->
                 <!--
@@ -37,7 +40,7 @@
       </a-entity>
       <a-entity id="right-hand"
                 brush="color: #ff0; linewidth: 1"
-                vive-controls="hand: right;"
+                vive-controls="hand: right; model: false"
                 json-model="src: url(models/apainter_controller.json)">
                 
                 <!--<a-entity visible="true" colorwheel geometry="primitive:plane; width: 0.1; height: 0.1" position="0 0.027 0.06" rotation="90 0 0" material="shader: flat; transparent:true; color: #fff; src:#color; side:double">
