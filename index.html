@@ -32,7 +32,7 @@
 
       <a-entity id="left-hand"
                 brush="color: #ff0; linewidth: 1"
-                vive-controls="hand: left; model: false"
+                vive-controls="hand: left; model: true"
                 json-model="src: url(models/apainter_controller.json)">
                 <!--<a-entity geometry="primitive: sphere; radius: 0.035" position="0 -0.03 -0.02" material="color:#ff9; shader:flat"></a-entity>-->
                 <!--
@@ -41,7 +41,9 @@
                   </a-entity>
                 </a-entity>
                 -->
-                <a-entity id="left-ui" material="flatShading:true;shader:flat;transparent:true;color:#ffffff;fog:false;src:#uinormal" obj-model="obj: #uiobj"></a-entity>
+
+                <a-entity id="left-ui" material="flatShading:true;shader:flat;transparent:true;color:#ffffff;fog:false;src:#uinormal;side:double" obj-model="obj:#uiobj" position="0 0.03 -0.12"></a-entity>
+
 
       </a-entity>
       <a-entity id="right-hand"
@@ -53,8 +55,6 @@
                   <a-entity marker geometry="primitive: sphere; radius: 0.005" position="0 0 0" material="color: #fff; roughness: 1.0; metalness:0.0"></a-entity>
                 </a-entity>
                 -->
-                
-                <a-entity id="right-ui" material="flatShading:true;shader:flat;transparent:true;color:#ffffff;fog:false;src:#uinormal" obj-model="obj: #uiobj"></a-entity>
       </a-entity>
       <a-entity id="ground"
                 geometry="primitive: circle; radius: 12;"
