@@ -109,6 +109,7 @@ AFRAME.registerBrush = function (name, definition, options) {
 AFRAME.registerSystem('brush', {
   schema: {},
   brushes: {},
+  strokes: [],
   strokeEntities: [],
   strokes: [],
   getUsedBrushes: function () {
@@ -144,7 +145,6 @@ AFRAME.registerSystem('brush', {
   },
   tick: function (time, delta) {
     if (!this.strokes.length) { return; }
-
     for (var i = 0; i < this.strokes.length; i++) {
       this.strokes[i].tick(time, delta);
     }
